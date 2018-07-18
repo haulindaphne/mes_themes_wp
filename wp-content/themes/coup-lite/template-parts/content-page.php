@@ -10,6 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php
+echo do_shortcode('[tm-timeline layout="2" visible-items="1" date-format="4" anchors="true" order="DESC"]');
+?>
 	<header class="entry-header container container-side">
 		<?php the_title( '<h1 class="entry-title big-text">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
