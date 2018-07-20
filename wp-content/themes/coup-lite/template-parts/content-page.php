@@ -10,18 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-<!--
- * condition si se trouve sur la page actualités / agenda 
- * alors, echo le shortcode.
- * Peux utiliser l'id de la page wp qui ne changera pas.
--->
-<?php if(is_page(8540)): ?>
-<?php echo do_shortcode('[tm-timeline layout="2" visible-items="1" date-format="4" anchors="true" order="DESC"]'); ?>
-<?php endif; ?>
-
-
-
 	<header class="entry-header container container-side">
 		<?php the_title( '<h1 class="entry-title big-text">', '</h1>' ); ?>
 	</header><!-- .entry-header -->

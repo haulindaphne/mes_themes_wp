@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-
 <?php wp_head(); ?>
 </head>
 
@@ -26,11 +25,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<!--
-			<a href="#">
-				<img src="http://localhost/wordpress/wp-content/uploads/2018/07/logo-musee-de-la-photographie-e1531819780335.jpg" alt="logo musée" width="400" height="400" />
-				</a> 	-->		
-				<?php if (has_custom_logo()) {
+			<?php if (has_custom_logo()) {
 				the_custom_logo();
 					?>
 				<div class="site-information">
@@ -78,8 +73,12 @@
 						<span></span>
 					</span>
 				</button>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+	<?php
+echo do_shortcode('[smartslider3 slider=5]');
+?>

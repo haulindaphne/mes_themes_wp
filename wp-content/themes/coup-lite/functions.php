@@ -81,8 +81,8 @@ function coup_setup() {
 
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
-		'width'       => 500,
-		'height'      => 500,
+		'width'       => 400,
+		'height'      => 120,
 		'flex-width'  => true,
 	) );
 

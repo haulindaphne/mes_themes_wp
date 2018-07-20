@@ -73,7 +73,21 @@ get_header(); ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
+	<aside class="side-nav">
+		<!-- Search form -->
+		<div class="search-wrap">
+			<?php get_search_form(); ?>
+		</div>
+
+		<!-- insert sharedaddy if enabled here -->
+			<?php coup_insert_sharedaddy() ?>
+
+		<!-- List all categories -->
+
+		<?php coup_categories_filter('index') ?>
+
+
+	</aside>
 
 <?php
 get_footer();

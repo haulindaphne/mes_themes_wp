@@ -87,7 +87,7 @@ Bootstrap © 2017 Twitter, Inc.
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: 'DINPRO';
+	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -202,7 +202,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: 'DINPRO';
+	font-family: monospace, monospace;
 	font-size: 1em;
 }
 
@@ -370,7 +370,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "DINPRO";
+	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -384,7 +384,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: "DINPRO";
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -433,13 +433,17 @@ big {
 }
 
 /*--------------------------------------------------------------
-## DINPRO
+## Icomoon
 --------------------------------------------------------------*/
 
 
 @font-face {
-  font-family: 'DINPRO';
-  src:  url('assets/fonts/DINPRO/DINPro.woff');
+  font-family: 'icomoon';
+  src:  url('assets/fonts/icomoon/icomoon.eot?614nxa');
+  src:  url('assets/fonts/icomoon/icomoon.eot?614nxa#iefix') format('embedded-opentype'),
+	url('assets/fonts/icomoon/icomoon.ttf?614nxa') format('truetype'),
+	url('assets/fonts/icomoon/icomoon.woff?614nxa') format('woff'),
+	url('assets/fonts/icomoon/icomoon.svg?614nxa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -456,7 +460,7 @@ input[type="radio"] + label:before,
 .page blockquote:before,
 .page q:before {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'DINPRO' !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -516,7 +520,7 @@ input[type="radio"] + label:before,
 --------------------------------------------------------------*/
 
 body {
-	font-family: 'DINPRO';
+	font-family: 'HK Grotesk', Verdana, Geneva, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-moz-font-smoothing: grayscale;
@@ -2428,10 +2432,10 @@ input[type="radio"] + label:before {
 }
 
 .site-branding {
+	float: right;
 	max-width: 40vw;
 	text-align: right;
 	margin-top: -10px;
-	margin-left: 25em;
 	max-height: 100%;
 }
 
@@ -2468,23 +2472,13 @@ input[type="radio"] + label:before {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#colophon {
-	background-color: black;
-	width: 150em;
-	margin-left: -5em;
+
+.site-footer {
+	margin-top: 120px;
 }
+
 .site-info {
 	margin-bottom: 25px;
-	margin-left: 25em;
-}
-.site-info-link, .sep {
-	color: white;
-}
-.widget ul {
-	margin-top: 10em;
-}
-.widget li {
-	display: inline;
 }
 
 /*--------------------------------------------------------------
@@ -3848,42 +3842,19 @@ body .back-to-top.hide {
 .widget.milestone-widget {
 	margin: 0 0 60px;
 }
+
 .widget-title {
 	text-transform: uppercase;
-	margin-left: 10em;
-	padding-top: 2.5em;
-	color: white;
-	width: 40em;
-	font-weight: 600;
 }
-.textwidget {
-	text-transform: uppercase;
-	color: white;
-	width: 40em;
-	margin-top: -2em;
-	margin-left: -3em;
-	text-align: center;
-}
+
 #secondary .widget,
 .site-footer .widget-area {
 	width: 360px;
-	height: auto;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 80px 60px 0;
 }
-.widget_media_image {
-	margin-left: 21.5em;
-	width: 2em;
-	height: 2em;
-}
-#media_image-6 {
-	margin-left: 21.5em;
-}
-#media_image-9 {
-	margin-left: 25em;
-	margin-top: -10em;
-}
+
 
 /* half width widgets */
 
@@ -3915,24 +3886,12 @@ body .back-to-top.hide {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: -5em;
-	margin-left: -31em;
 }
 
 .widget li {
 	margin-bottom: 10px;
 }
-.footer-logo {
-	width: 1.8em;
-	height: 1.8em;
-}
-#facebook, #youtube {
-	width: 2.5em;
-	height: 2.5em;
-}
-#google, #pinterest {
-	transform: translateY(-0.5em);
-}
+
 /* search */
 
 .search-form {
@@ -4153,18 +4112,17 @@ body #eu-cookie-law.negative input:hover {
 
 .big-text,
 .archive .page-title.big-text {
-	font-size: 70px;
+	font-size: 160px;
 	font-weight: 700;
 	line-height: 1.1;
 	position: absolute;
 	top: -0.62em;
-	color: rgb(190, 188, 188);
+	color: #eee;
 	z-index: -1;
 	width: 80vw;
 	letter-spacing: -.04em;
 	padding: 0;
 	margin: 0;
-	margin-left: 1em;
 }
 
 .entry-meta {
@@ -4883,7 +4841,6 @@ article.type-jetpack-portfolio.no-featured-content .archive-background {
 }
 
 .more-link {
-	margin-left: 5em;
 	position: absolute;
 	left: -20px;
 	top: 50%;
