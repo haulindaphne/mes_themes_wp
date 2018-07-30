@@ -483,3 +483,14 @@ require get_template_directory() . '/inc/customizer/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// s'il y a plusieurs menus à rajouter, voici le code :
+/*function register_my_menus() {
+	register_nav_menus(
+	array(
+	'private-menu' => __( 'Menu Privé' ),
+	'footer-menu' => __( 'Menu Footer' ),
+	)
+	);
+   }
+   add_action( 'init', 'register_my_menus' );*/

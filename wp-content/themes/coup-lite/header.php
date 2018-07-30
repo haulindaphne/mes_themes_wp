@@ -48,10 +48,10 @@
 				</div>
 				<?php }; ?>
 		</div><!-- .site-branding -->
-
+<!--
 		<div class="sidebar-nav-holder">
 
-			<?php if ( is_active_sidebar('sidebar-1') ) : ?>
+			<?php /*if ( is_active_sidebar('sidebar-1') ) : ?>
 				<div class="sidebar-button">
 					<button class="sidebar-toggle">
 						<span class="screen-reader-text"><?php esc_html_e( 'toggle open/close sidebar', 'coup' ); ?></span>
@@ -64,21 +64,20 @@
 				</div>
 			<?php endif; ?>
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle hide" aria-controls="primary-menu" aria-expanded="false">
-					<span class="open-menu"><?php esc_html_e( 'Menu', 'coup' ); ?></span>
-					<span class="close-menu"><?php esc_html_e( 'Close', 'coup' ); ?></span>
+			<!--<nav id="site-navigation" class="main-navigation" role="navigation">-->
+				<!--<button class="menu-toggle hide" aria-controls="primary-menu" aria-expanded="false"> -->
+			<!--	<span class="open-menu"><?php /*esc_html_e( 'Menu', 'coup' );*/ ?></span>
+					<span class="close-menu"><?php /*esc_html_e( 'Close', 'coup' ); ?></span>
 					<span class="hamburger">
 						<span></span>
 						<span></span>
 					</span>
 				</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php /*wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); */?>
 			</nav><!-- #site-navigation -->
+			
 		</div>
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-	<?php
-echo do_shortcode('[smartslider3 slider=5]');
-?>

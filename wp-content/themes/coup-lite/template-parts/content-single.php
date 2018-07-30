@@ -42,9 +42,9 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+<!--
 	<footer class="entry-footer container container-small">
-		<?php coup_entry_footer(); ?>
+		<?php /*coup_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
 	<?php

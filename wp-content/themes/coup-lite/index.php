@@ -39,9 +39,9 @@ get_header(); ?>
 
 
 		<main id="main" class="site-main container" role="main">
-			<?php
-			if ( is_home() && ! is_front_page() ) : ?>
-
+		<?php if ( is_front_page() && is_home() ) : ?>
+	<?php echo do_shortcode('[smartslider3 slider=8]'); ?>
+	
 			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
 			<?php
